@@ -42,7 +42,20 @@ src/
 Cmd:
 npm create vite@latest portfolio
 npm insall bootstrap
+
+### Run the project
 npm run dev
+
+### Build for Production
+npm run build
+
+ The application will run on:
+ ### http://localhost:5173
 
 ### Author
 Iqra Irfan
+Web Developer
+React.js | Node.js | Express | MongoDB
+
+### License
+This project is for personal and professional portfolio use.
