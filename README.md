@@ -1,3 +1,6 @@
+
+<img width="1842" height="913" alt="image" src="https://github.com/user-attachments/assets/5cfee230-05b6-4e45-b0a0-41fcdfd973a1" />
+
 # React Portfolio Website
 
 ## Overview
@@ -37,4 +40,9 @@ src/
 
 ### Installation
 Cmd:
-npm install
+npm create vite@latest portfolio
+npm insall bootstrap
+npm run dev
+
+### Author
+Iqra Irfan
