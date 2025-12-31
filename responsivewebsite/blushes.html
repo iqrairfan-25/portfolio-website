@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Shop - Blushes</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   
+    <style>
+        /* Root Variables for Custom Styling (Copied from index.html) */
+        :root {
+            --primary-color: #641220;
+            --secondary-color: #6e1423;
+            --accent-color: #dfd9da;
+            --highlight-color: #a11d33;
+            --dark-color: #a71e34;
+            --light-color: #b21e35;
+            --lighter-color: #bd1f36;
+            --pink-color: #c71f37;
+            --red-color: #da1e37;
+            --fuchsia-color: #e01e37;
+        }
+
+        /* Custom Styles to enhance Bootstrap with provided theme */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-color);
+            background-color: #fff;
+        }
+
+        /* Styling for Sections and Titles */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        /* Product Card Styling (Adjusted for product listings) */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            aspect-ratio: 1 / 1; /* Keep images square */
+        }
+        .product-card h3 {
+            color: var(--primary-color);
+        }
+        .price {
+            color: var(--highlight-color);
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        /* Blushes Hero Header - Specific styling */
+        .blush-hero {
+            background-color: var(--fuchsia-color); /* Using a slightly different shade from the palette */
+            padding: 5rem 0;
+            color: white;
+            text-align: center;
+        }
+        .blush-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+        }
+        
+        /* Footer Styling (Copied from index.html) */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        footer h4 {
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--accent-color);
+        }
+        .social-icons a {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #641220;">
+        <div class="container-fluid">
+            <div>
+                <h1 class="text-white">BeautyShop.</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    
+                
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="lispsticks.html">Lipsticks</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="blush-hero">
+        <div class="container">
+            <h1>BLUSHES FOR A NATURAL GLOW</h1>
+            <p class="lead">Add a touch of color and radiance with our wide range of blush formulas.</p>
+        </div>
+    </section>
+
+    <section class="products py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center" style="color: var(--primary-color);">FIND YOUR PERFECT FLUSH</h2>
+            
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/macblush.jpg" alt="MAC Powder Blush" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">MAC - Powder Blush</h3>
+                        <p class="text-muted fst-italic mb-1">Sheertone Shimmer</p>
+                        <p class="price">$28.00</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/anastsiablush.jfif" alt="Anastasia Blush Trio" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">ANASTASIA - Blush Trio</h3>
+                        <p class="text-muted fst-italic mb-1">Three perfect shades</p>
+                        <p class="price">$30.00</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/diorblush.jfif" alt="Dior Rosy Glow" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">CHRISTINE DIOR - Rosy Glow</h3>
+                        <p class="text-muted fst-italic mb-1">Color-Reviving Powder</p>
+                        <p class="price">$42.00</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/kylieblush.jfif" alt="Kylie Pressed Blush Powder" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">KYLIE - Pressed Powder</h3>
+                        <p class="text-muted fst-italic mb-1">Velvet Finish</p>
+                        <p class="price">$20.00</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/lorealblush.jpg" alt="L'Oreal Infallible Blush" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">L'OREAL - Melon Dollar Baby</h3>
+                        <p class="text-muted fst-italic mb-1">Scented Powder</p>
+                        <p class="price">$14.99</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/chanelblush.jpg" alt="Chanel Joues Contraste" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">CHANEL - Joues Contraste</h3>
+                        <p class="text-muted fst-italic mb-1">Powder Blush</p>
+                        <p class="price">$50.00</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/esteeblush.jfif" alt="Estee Lauder Pure Color" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">ESTEE LAUDER - Pure Color</h3>
+                        <p class="text-muted fst-italic mb-1">Envy Sculpting</p>
+                        <p class="price">$34.00</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="product-card p-3 h-100 bg-white shadow-sm rounded-3 text-center">
+                        <img src="images/etudeblush.jfif" alt="Etude House Lovely Cookie" class="img-fluid mb-2">
+                        <h3 class="h6 text-uppercase mb-0">ETUDE - Lovely Cookie</h3>
+                        <p class="text-muted fst-italic mb-1">Blush & Puff</p>
+                        <p class="price">$8.50</p>
+                        <a href="#" class="btn btn-sm text-white" style="background-color: var(--highlight-color);">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row footer-grid">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="mb-3">About Us</h4>
+                    <p class="text-light">YOUR GO-TO DESTINATION FOR PREMIUM BEAUTY PRODUCTS.</p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="mb-3">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="mb-3">Contact Us</h4>
+                    <p class="text-light">Email: support@beautyshop.com</p>
+                    <p class="text-light">Phone: +1 234 567 890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
